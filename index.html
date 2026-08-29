@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Properties Studio & Learning</title>
+<style>
+body {
+    background-image: url('https://img.magnific.com/free-photo/3d-render-house-countryside_1048-13116.jpg?semt=ais_hybrid&w=740&q=80');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+.card {
+    position: relative;
+    height: 260px;
+    border-radius: 16px;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Overlay */
+.card-overlay {
+    background: rgba(0, 0, 0, 0.25);
+
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.card-subtitle {
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+.card-description {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    max-width: 85%;
+    opacity: 0.95;
+}
+
+.card-img {
+    background: url(
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5cncth3JTJ8vvNHYehwR1SmqzlMxX0gaWB5pEqsbk9w&s=10') center/cover no-repeat;
+}
+.card-gradient-1 {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq-Qr_tzqcmiG5dlCleVdoPj_d76OWn1etTfxB_qqXoA&s=10') center/cover no-repeat;
+}
+.card-gradient-2 {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQH3YxIOmUXwO-OSogGqkYVANuBTrbq3vk_DsFFrxGFIg&s=10') center/cover no-repeat;
+}
+
+.card-gradient-3 {
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfaLsKD7k_I3f68uxiCkD5uzEBmXroiXr67NHJuiySwA&s=10') center/cover no-repeat;
+}
+
+@media (max-width: 650px) {
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        height: 240px;
+    }
+}
+</style>
+</head> 
+
+<body>
+
+    <div class="card-grid">
+
+        <!-- Card 1 -->
+        <div class="card card-img">
+            <div class="card-overlay">
+                <h2 class="card-title">រចនាគេហទំព័រជាមួយ</h2>
+                <h1 class="card-subtitle">CSS</h1>
+                <p class="card-description">
+                    CSS Properties គឺជាគុណលក្ខណៈ
+                    ដែលអាចប្រើក្នុង CSS ដើម្បីកំណត់រចនាប័ទ្ម
+                    និងរូបរាងរបស់ធាតុ HTML។
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card card-gradient-1">
+            <div class="card-overlay">
+                <h2 class="card-title">រចនាគេហទំព័រជាមួយ</h2>
+                <h1 class="card-subtitle">CSS</h1>
+                <p class="card-description">
+                    CSS Properties គឺជាគុណលក្ខណៈ
+                    ដែលអាចប្រើក្នុង CSS ដើម្បីកំណត់រចនាប័ទ្ម
+                    និងរូបរាងរបស់ធាតុ HTML។
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card card-gradient-2">
+            <div class="card-overlay">
+                <h2 class="card-title">រចនាគេហទំព័រជាមួយ</h2>
+                <h1 class="card-subtitle">CSS</h1>
+                <p class="card-description">
+                    CSS Properties គឺជាគុណលក្ខណៈ
+                    ដែលអាចប្រើក្នុង CSS ដើម្បីកំណត់រចនាប័ទ្ម
+                    និងរូបរាងរបស់ធាតុ HTML។
+                </p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card card-gradient-3">
+            <div class="card-overlay">
+                <h2 class="card-title">រចនាគេហទំព័រជាមួយ</h2>
+                <h1 class="card-subtitle">CSS</h1>
+                <p class="card-description">
+                    CSS Properties គឺជាគុណលក្ខណៈ
+                    ដែលអាចប្រើក្នុង CSS ដើម្បីកំណត់រចនាប័ទ្ម
+                    និងរូបរាងរបស់ធាតុ HTML។
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
